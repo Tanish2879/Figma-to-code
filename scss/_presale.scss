@@ -1,0 +1,106 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+.presale {
+    padding: 80px 8%;
+    background-color: v.$dark-bg;
+}
+
+
+// Heading
+
+.presale h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+
+// Cards
+
+.presale-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+// Individual Card
+
+.presale-card {
+    width: 30%;
+    padding: 35px 25px;
+
+    background-color: v.$white;
+    color: v.$dark-bg;
+
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+
+// Phase Number
+
+.phase-number1 {
+ @include m.phasecard;
+}
+
+.phase-number2 {
+ @include m.phasecard;
+ background-color: rgb(57, 57, 216);
+}
+.phase-number3 {
+ @include m.phasecard;
+ background-color: rgb(241, 241, 73);
+}
+
+
+
+// Card Content
+
+.phase-content h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.phase-content p {
+    font-size: 13px;
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+
+    color: #555;
+}
+
+
+// Token Rate
+
+.phase-content .token-rate {
+    margin: 20px 0;
+
+    color: v.$dark-bg;
+    font-weight: bold;
+}
+
+
+// Mobile
+
+// @include mixins.mobile {
+
+//     .presale {
+//         padding: 60px 20px;
+//     }
+
+//     .presale h2 {
+//         font-size: 28px;
+//     }
+
+//     .presale-cards {
+//         flex-direction: column;
+//     }
+
+//     .presale-card {
+//         width: 100%;
+//     }
+// }

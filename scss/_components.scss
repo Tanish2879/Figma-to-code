@@ -1,0 +1,33 @@
+@use "./variables" as v;
+
+%button {
+    border-radius: 52px;
+    cursor: pointer;
+    padding: 12px 30px;
+    font-size: 15px;
+    border: none;
+    font-weight: 500;
+}
+
+.hero button {
+    @extend %button;
+
+    background-color: v.$green;
+    color: v.$white;
+}
+
+.audience-creator button,
+.audience-holder button {
+    @extend %button;
+
+    background-color: transparent;
+    color: v.$white;
+    border: 1px solid v.$white;
+}
+
+.coming button {
+    @extend %button;
+
+    background-color: v.$green;
+    color: v.$white;
+}

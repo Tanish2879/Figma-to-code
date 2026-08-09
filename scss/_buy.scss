@@ -1,0 +1,85 @@
+@use "./variables" as v;
+@use "./mixins";
+
+
+
+.buy {
+    padding: 80px 8%;
+    background-color: v.$dark-bg;
+    text-align: center;
+}
+
+
+
+
+.buy h2 {
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+
+
+
+.buy-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.buy-step {
+    flex: 1;
+    min-height: 180px;
+    padding: 35px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: v.$card-bg;
+    border-radius: v.$card-radius;
+
+    p {
+        color: v.$text-light;
+
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+
+
+.buy-steps-arrow {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+
+// ================================
+// Mobile
+// ================================
+
+// @include mixins.mobile {
+
+//     .buy {
+//         padding: 60px 20px;
+//     }
+
+//     .buy h2 {
+//         font-size: 28px;
+//         margin-bottom: 35px;
+//     }
+
+//     .buy-steps {
+//         flex-direction: column;
+//         gap: 15px;
+//     }
+
+//     .buy-step {
+//         width: 100%;
+//         min-height: 150px;
+//     }
+
+//     .buy-steps-arrow {
+//         transform: rotate(135deg);
+//     }
+// }

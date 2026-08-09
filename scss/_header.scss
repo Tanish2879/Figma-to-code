@@ -1,0 +1,40 @@
+@use "./variables" as v;
+@use "./mixins";
+
+header {
+    width: 100%;
+    padding: 25px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    img {
+        width: 45px;
+        height: 45px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        a {
+            font-size: 15px;
+
+            &:hover {
+                color: v.$green;
+            }
+        }
+    }
+
+    div:last-child {
+        margin-left: auto;
+    }
+}

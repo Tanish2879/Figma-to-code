@@ -1,0 +1,35 @@
+@use "./variables" as v;
+
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin roadmap-icon{
+     width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+@mixin Q{
+     position: absolute;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+    color: black;
+}
+
+@mixin phasecard{
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: v.$green;
+    color: v.$white;
+    font-weight: bold;
+}

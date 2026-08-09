@@ -1,0 +1,113 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+
+
+.roadmap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 80px 8%;
+    background-color: v.$dark-bg;
+}
+
+
+.roadmap article {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.roadmap-icon1 {
+    @include m.roadmap_icon;
+    background-color: v.$green;
+
+}
+
+.roadmap-icon2 {
+    @include m.roadmap_icon;
+    background-color: rgb(59, 59, 223);
+
+}
+
+.roadmap-icon3 {
+    @include m.roadmap_icon;
+    background-color: yellow;
+
+}
+
+.roadmap-icon4 {
+    @include m.roadmap_icon;
+    background-color: rgb(219, 47, 47);
+
+}
+
+.roadmap-icon1 p{
+   @include m.Q
+
+
+}
+
+.roadmap-icon2 p{
+    @include m.Q
+}
+
+.roadmap-icon3 p{
+
+    @include m.Q
+
+}
+
+.roadmap-icon4 p{
+    @include m.Q
+
+}
+
+
+
+.roadmap-content {
+    width: 100%;
+
+    p {
+        display: flex;
+        align-items: flex-start;
+        color: v.$white;
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    span {
+        min-width: 30px;
+        color: v.$green;
+        font-weight: 700;
+        margin-right: 8px;
+    }
+}
+
+
+
+
+.roadmap article:nth-child(2) {
+    .roadmap-content span {
+        color: v.$blue;
+    }
+}
+
+.roadmap article:nth-child(3) {
+    .roadmap-content span {
+        color: v.$yellow;
+    }
+}
+
+.roadmap article:nth-child(4) {
+    .roadmap-content span {
+        color: v.$red;
+    }
+}
+
+
+
+

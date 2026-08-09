@@ -1,0 +1,45 @@
+@use "./variables" as v;
+@use "./mixins";
+
+.hero{
+    min-height: 520px;
+    padding: 60px 5%;
+    display: flex;
+    align-items: center;
+
+    .hero-text{
+        width: 30%;
+    }
+    p:first-child{
+        color: v.$green;
+        font-size: 14px;
+        margin-bottom: 12px;
+
+    }
+    h1{
+        font-size: 42px;
+        margin-bottom: 12px;
+    }
+    p{
+        color: v.$text-light;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+
+}
+
+
+.hero-image{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 50px;
+    margin: bottom 50px;
+    
+    img{
+        width: 100%;
+        max-width: 650;
+    }
+}
