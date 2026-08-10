@@ -1,10 +1,5 @@
 @use "./variables" as v;
 
-@mixin flex-center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 @mixin roadmap-icon{
      width: 100px;

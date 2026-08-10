@@ -121,8 +121,9 @@ header {
   margin: bottom 50px;
 }
 .hero-image img {
-  width: 100%;
-  max-width: 650;
+  width: 168%;
+  max-width: 961px;
+  margin-right: -400px;
 }
 
 .audience {

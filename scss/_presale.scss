@@ -7,8 +7,6 @@
 }
 
 
-// Heading
-
 .presale h2 {
     text-align: center;
     font-size: 32px;
@@ -16,7 +14,6 @@
 }
 
 
-// Cards
 
 .presale-cards {
     display: flex;
@@ -25,7 +22,6 @@
 }
 
 
-// Individual Card
 
 .presale-card {
     width: 30%;
@@ -39,8 +35,6 @@
     text-align: center;
 }
 
-
-// Phase Number
 
 .phase-number1 {
  @include m.phasecard;
@@ -57,7 +51,6 @@
 
 
 
-// Card Content
 
 .phase-content h3 {
     font-size: 22px;
@@ -83,24 +76,3 @@
     font-weight: bold;
 }
 
-
-// Mobile
-
-// @include mixins.mobile {
-
-//     .presale {
-//         padding: 60px 20px;
-//     }
-
-//     .presale h2 {
-//         font-size: 28px;
-//     }
-
-//     .presale-cards {
-//         flex-direction: column;
-//     }
-
-//     .presale-card {
-//         width: 100%;
-//     }
-// }
