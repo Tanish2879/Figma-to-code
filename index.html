@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <meta name="description" content="Tokners social media 3.0 platform using blockchain technology.">
+    <title>Tokners - Social Media</title>
+    <link rel="stylesheet" href="scss/main.css">
 </head>
 <body>
 
     <header>
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Primary navigation">
             <img src="assets/header/toknerlogo.png">
             <h3>Tokners</h3>
             <div>
@@ -27,7 +27,7 @@
 
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="hero">
             <div class="hero-text">
                 <p>Ai Token we are</p>
@@ -45,7 +45,7 @@
         <section class="audience">
             <article class="audience-creator">
                 <div class="audience-creator-icon">
-                    <img src="assets/audience/creatoricon.png">
+                    <img src="assets/audience/creatoricon.png" alt="Creator community icon">
 
                 </div>
                 <div class="audience-creator-content">
@@ -63,7 +63,7 @@
             <article class="audience-holder">
 
                  <div class="audience-holder-icon">
-                    <img src="assets/audience/holdericon.png">
+                    <img src="assets/audience/holdericon.png" alt="Token holder community icon">
 
                 </div>
                 <div class="audience-holder-content">
@@ -81,7 +81,7 @@
         <section class="difference">
 
             <div class="difference-image">
-                <img src="assets/difference/Group 34.png">
+                <img src="assets/difference/Group 34.png"  alt="Illustration showing what makes the Tokners platform different">
 
             </div>
 
@@ -173,11 +173,78 @@
             </div>
 
             <div class="coming-image">
-                <img src="assets/coming/Woman-Holding-iPhone-Xs-in-Hand-Mockup 1.png" alt="">
+                <img src="assets/coming/Woman-Holding-iPhone-Xs-in-Hand-Mockup 1.png"  alt="Woman holding an iPhone displaying the Tokners platform">
 
             </div>
 
         </section>
+
+
+         <section class="media-accessibility" id="media" aria-labelledby="media-heading">
+            <h2 id="media-heading">Tokners Media</h2>
+
+            <article class="media-video">
+                <h3>Introduction to Tokners</h3>
+                <video controls preload="metadata" aria-describedby="video-description">
+                    <source src="assets/media/tokners-introduction.mp4" type="video/mp4">
+                    <track
+                        kind="captions"
+                        src="assets/media/tokners-introduction-en.vtt"
+                        srclang="en"
+                        label="English captions"
+                        default>
+                    Your browser does not support the video element.
+                </video>
+                <p id="video-description">
+                    An introduction to the Tokners platform and its social media 3.0 concept.
+                    A text transcript should be provided alongside the video.
+                </p>
+                <details>
+                    <summary>Video transcript</summary>
+                    <p>
+                        Video transcript: Introduction to the Tokners platform and its
+                        social media 3.0 concept. Replace this placeholder with the
+                        complete spoken content of the video.
+                    </p>
+                </details>
+            </article>
+
+            <article class="media-audio">
+                <h3>Tokners Audio Introduction</h3>
+                <audio controls preload="metadata" aria-describedby="audio-description">
+                    <source src="assets/media/tokners-introduction.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p id="audio-description">
+                    Audio introduction to the Tokners platform. A text transcript is
+                    available below.
+                </p>
+                <details>
+                    <summary>Audio transcript</summary>
+                    <p>
+                        Audio transcript: Introduction to the Tokners platform and its
+                        social media 3.0 concept. Replace this placeholder with the
+                        complete spoken content of the audio.
+                    </p>
+                </details>
+            </article>
+
+            <article class="media-infographic">
+                <h3>Tokners Platform Overview</h3>
+                <figure>
+                    <img
+                        src="assets/media/tokners-infographic.png"
+                        alt="Infographic explaining the Tokners platform, including creators, token holders, and the blockchain-based social economy."
+                        aria-describedby="infographic-description">
+                    <figcaption id="infographic-description">
+                        The infographic explains how creators launch digital currencies,
+                        how token holders access creator benefits, and how the Tokners
+                        network connects these communities.
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+
 
         <section class="presale">
 
@@ -277,7 +344,7 @@
 
                 </article>
                 <div class="buy-steps-arrow">
-                    <img src="assets/buy/arrow1.png" alt="">
+                    <img src="assets/buy/arrow1.png" alt="" aria-hidden="true">
                 </div>
                 <article class="buy-step">
                     <p>Then send minimum of 0.1 BNB or maximum of 10 BNB to the Presale wallet</p>
@@ -301,7 +368,7 @@
     </main>
 
     <footer>
-        <nav class="footer-links"> 
+        <nav class="footer-links" aria-label="Footer navigation"> 
             <a href="">Our team</a>
             <a href="">Tokens</a>
             <a href="">Connect wallet</a>
@@ -321,12 +388,12 @@
 
         <div class="social-links">
 
-            <a href="" alt="Twitter">Twitter</a>
-            <a href="" alt="Telegram">Telegram</a>
-            <a href="" alt="Instagram">Instagram</a>
-            <a href="" alt="Medium">Medium</a>
-            <a href="" alt="Github">Github</a>
-            <a href="" alt="Social Media">Social</a>
+            <a href="" alt="Twitter" aria-label="Tokners on Twitter">Twitter</a>
+            <a href="" alt="Telegram" aria-label="Tokners on Telegram">Telegram</a>
+            <a href="" alt="Instagram" aria-label="Tokners on Instagram">Instagram</a>
+            <a href="" alt="Medium" aria-label="Tokners on Medium">Medium</a>
+            <a href="" alt="Github" aria-label="Tokners on Github">Github</a>
+            <a href="" alt="Social Media" aria-label="Tokners on social media">Social</a>
 
         </div>
 
